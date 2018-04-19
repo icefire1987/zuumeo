@@ -1,0 +1,107 @@
+table.contactform {
+	border-collapse: collapse;
+	width: 630px;
+	
+	/* border: 1px solid red; */
+}
+
+
+table.contactform td,
+table.contactform th {
+	text-align: left;
+	vertical-align: top;
+	
+	/* border: 1px solid red; */
+}
+
+table.contactform th {
+	width: auto;
+	padding: 5px 25px 10px 0px;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+.table_form_text p {
+	width: auto;
+}
+
+
+table.contactform td {
+	width: 100%;
+	padding: 0px 0px 10px 0px;
+}
+
+table.contactform th.m_top,
+table.contactform td.m_top {
+	/* padding-top: 19px; */
+}
+
+table.contactform th.td_checkbox.m_top,
+table.contactform td.td_checkbox.m_top {
+	padding-top: 14px;
+}
+
+table.contactform input.text,
+table.contactform .textarea {
+	border: 1px solid #007595;
+	background: #f9f9f9;
+	width: 100%;
+	outline: none;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+table.contactform input.text {
+	height: 23px;
+	width: 70%;
+	padding: 0px 0px 0px 6px;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+table.contactform .textarea {
+	width: 100%;
+	height: 140px;
+	resize: vertical;
+	padding: 4px 6px 4px 6px;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+table.contactform th.checkbox {
+	padding: 0px 12px 0px 0px;
+}
+
+table.contactform .checkbox_label {
+	width: 100%;
+}
+
+
+
+table.contactform .submit {
+	margin: 5px 0px 0px 0px;
+	padding: 6px 8px 6px 8px;
+	background: #007595;
+	border: none;
+	color: #ffffff;;
+	font-size: 12px;
+	line-height: 1.0em;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+table.contactform .submit:hover {
+	background: #d3d3cc;
+}

@@ -1,0 +1,477 @@
+@font-face { font-family: gotham; src: url("GothamLight.ttf"); }
+@font-face { font-family: gotham; font-weight:bold; src: url("GothamBook.ttf"); }
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff") format("woff");
+}
+@keyframes ellipsis {  
+    from {  
+        width: 2px;  
+    }  
+    to {  
+        width: 15px;  
+    }  
+} 
+body{
+	line-height: 25px;
+	font-family: Open Sans,gotham,Verdana;
+	position: relative;
+	padding-top:50px;
+}
+*{
+	box-sizing: border-box;
+}
+.banner { 
+	position: relative; 
+	overflow: hidden; 
+	padding:2px;
+	max-height: 500px;
+}
+.banner .slide {
+	position: relative; 
+	background-color: white;
+	width: 100%;
+	opacity:0;
+    max-height: 0;
+    text-align:center;
+}
+.banner .slideShow{	
+	opacity:1;
+    max-height: 100%;
+	transition: opacity 1s ease-in-out;
+   -moz-transition: opacity 1s ease-in-out;
+   -webkit-transition: opacity 1s ease-in-out;
+   -o-transition: opacity 1s ease-in-out;
+}
+.banner .bubbleWrapper{
+	display: block;
+	position: absolute;
+	left:0;
+	bottom: 0;
+	width:100%;
+	text-align:center;
+}
+.bubbleWrapper span{
+	padding:0 1px;
+	font-size: 28px;
+	cursor: pointer;
+}
+.bubbleWrapper .bubbleBullet{
+	margin: 0 1px;
+	color: white;
+}
+.bullet_inactive{
+	opacity: 0.4;	
+}
+.bullet_active{
+	opacity: 1;
+}
+.banner img {
+	height:auto;
+  border-radius: 5px; 
+  box-shadow: 0 0 2px #808080;
+  display: inline-block;
+}
+.anchor:before {
+  content:"";
+  display:block;
+  height:50px; /* fixed header height*/
+  margin:-50px 0 0; /* negative fixed header height */
+}
+header img{
+	width: 100%;
+}
+.navbar {
+	background: white;
+}
+.navbar-brand{
+	padding-left: 0;
+}
+.navbar-brand img{
+	padding-top:10px;
+	max-height:40px;
+}
+.navbar-nav li a{
+	padding-right:0;
+}
+.navbar-nav {
+	margin-right: -30px !important;
+}
+.asLink{
+	cursor: pointer;
+}
+.rowLabel{
+	position:relative;
+	border-radius: 0 0  10px 10px;
+	display:block;
+	top:-30px;
+	padding:0 5px;
+	font-weight:bold;
+	width:150px;
+	margin:0 auto;
+	text-align: center;
+	color: white;
+}
+.rowLabelLarge{
+	background: transparent;
+	border:none;
+	border-bottom:1px solid hsl(200,60%, 40%);
+	height:20px;
+	border-radius:30px
+}
+.borderRound{
+	border-radius: 5px;
+}
+input[type="radio"] {
+    display: none;
+}
+label{
+	font-weight: normal;
+}
+input[type="radio"] + label span {
+	
+	position: relative;
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 5px 0 10px;
+    vertical-align:middle;
+    background: hsl(0, 0%, 95% );
+    box-shadow: inset 0 0 3px black;
+    border: white;
+    border-radius: 5px;
+}
+input[type="radio"]:checked + label span:after {
+	display:block;
+	position: absolute;
+    color: hsl(190,55%,45%);
+    content: "✔";
+    font-weight: bold;
+    font-size: 16px;
+	left: 3px;
+	top: -3px;
+}
+.inputSubmit{
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 0 2px #808080;
+	border: 1px solid #808080;
+	padding: 6px 18px;
+}
+.inputSubmit:active,.inputSubmit:focus{
+	background: white;
+	border-radius: 10px;
+	box-shadow: inset 0 0 2px hsl(200, 60%, 40%);
+	border: 1px solid #808080;
+	padding: 6px 18px;
+}
+.block{
+	display:block;
+}
+.inline-block{
+	display:inline-block;
+}
+.textCenter{
+	text-align:center;
+}
+.blockCenter{
+	margin-left: auto; 
+	margin-right: auto;
+}
+#wrapper{
+	width:100%;
+	padding:0;
+}
+#leistungen{
+	padding:30px 0;
+	/*background: hsl(0,0%,91%);*/
+	background: hsl(0,0%,100%);
+}
+#header{
+	background: black;
+}
+#leistungen_more{
+	padding:30px 0;
+	background: hsl(0,0%,100%);
+}
+#inside{
+	padding:30px 0;
+	background: white;
+}
+#inside ul{
+	margin: 14px 0 30px 0;
+	font-size:16px;
+}
+#inside ul li{
+	margin-bottom:4px;
+}
+#inside ul li span{
+	font-weight: bold;color: hsl(200,35%,56%);
+}
+.widthWrapper{
+	width:100%;
+}
+#referenzen{
+	padding: 30px 0;
+	background: hsla(200,35%,56%,1);
+	
+}
+#angebot{
+	padding: 30px 0;
+	background: hsl(0,0%,91%);
+}
+#anmerkung{
+	color: black;
+	width:100%;
+	border: none; 
+	background: hsl(0,0%,91%);
+	border-radius:10px;
+	margin-bottom:20px;
+	padding: 2px 6px;
+}
+#submit{
+	
+}
+.disabled{
+	background: #ddd;
+}
+#brands{
+	padding: 30px 0;
+	background: hsl(0,0%, 17%);
+}
+#outputMailSuccess{ 
+	display: none;
+	text-align:center;	
+	font-weight: bold;
+	font-size: 18px;
+	margin: 30px 10px 0 10px;
+	padding:10px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 0 5px #808080;
+	border: 1px solid #ccc;
+}
+.textError{
+	color: hsl(0, 60%, 40%);
+}
+.textSuccess{
+	color: hsl(120, 60%, 40%);
+}
+#footer{
+	padding: 30px 0;
+	background: hsl(0,0%, 5%);
+}
+#model{
+	padding: 30px 0;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus{
+	color: hsl(193,100%,29%);
+	background: none;	
+} 
+#referenzen a{
+	line-height:60px;
+}
+#referenzen img{
+	padding:20px 40px;
+	margin: 2px;
+	display: inline-block;
+}
+
+#footer span{
+	margin: 0 10px;
+	font-size:12px;
+	color:white;
+}
+#footer a{
+	font-size: 12px;
+}
+#leistungen a{
+	text-decoration: none;
+}
+
+a, a:focus, a:active{
+	outline: none;
+}
+.title{
+	color: #222;
+	margin-bottom:20px;
+	display: block;
+	font-weight: bold;
+	border-bottom:1px solid transparent;
+	text-shadow: 0 0 5px #ddd;
+}
+.category{
+	font-size:22px;
+	color: hsl(193,100%,29%);
+	margin-bottom:20px;
+	display: block;
+	font-weight: bold;
+}
+#leistungen .subtext{
+	display: block;
+	margin: 10px 0;
+	color: #333;
+	font-size:13px;
+	/*font-style: italic;*/
+}
+#leistungen .asLink:hover p{
+	color: #000;
+	text-shadow: 0 0 1px #ccc;
+	/*font-weight: bold;*/
+}
+#leistungen .asLink:hover .title, #leistungen_video .asLink:hover .title{
+	color: black;
+	border-bottom: 1px solid hsl(200,60%,60%);
+}
+#leistungen_video .asLink:hover img{
+	box-shadow: 0 0 3px hsl(200,60%,60%);
+}
+#leistungen_video .videowrapper{
+	margin-top: 50px;
+	display: none;
+	
+}
+#leistungen_video .videowrapper video{
+	/*box-shadow: 0 0 50px black;*/
+}
+#leistungen img{
+	height: 50px;
+}
+#leistungen_more span{
+	color: black;
+	margin-top:10px;
+	display: block;
+	font-weight: normal;
+}
+#leistungen_more p{
+	color: black;
+	display: block;
+	font-weight: normal;
+	font-size:12px;
+}
+#leistungen_foto .col-sm-2{
+	padding-left:5px;
+	padding-right:5px;
+}
+#leistungen_foto>div{
+	text-align: center;
+	height: 280px;
+}
+/*#leistungen_foto>div>a>span{
+	font-weight: bold;
+}*/
+
+#leistungen_foto p{
+	display: none;
+}
+#leistungen_foto a:hover p{
+	display: block;
+}
+#leistungen_foto a:hover{
+	text-decoration: none;
+	
+}
+#leistungen_foto a:hover span{
+	border-bottom: 1px solid hsl(200,60%,60%);
+}
+
+
+#leistungen_foto img{
+	margin: 0 auto;
+}
+#leistungen_texte p,#leistungen_texte ul,#leistungen_consulting p,#leistungen_consulting ul,#leistungen_post p,#leistungen_post ul{
+	color: black;
+	display: block;
+	font-weight: normal;
+	font-size:14px;
+}
+#leistungen_texte_icon{
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        
+}
+#leistungen_post_icon{
+	-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#layerContactMiddle{
+	background: #ddd;
+	width:50%;
+	min-width:600px;
+	margin: 0 auto;
+	position: relative;
+}
+#layerContact{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	box-shadow: 0 0 50px black,0 0 20px black,0 0 5px #808080;
+	background: #eee;
+}
+#closeLayer{
+	font-size:18px;
+	position:absolute;
+	top:5px;right:5px;	
+	cursor: pointer;
+	border: 1px solid #808080;
+	border-radius: 25%;
+	padding:2px 4px;
+}
+.closeVideo{
+	display: inline-block;
+	font-size:18px;
+	cursor: pointer;
+	width:400px;
+	text-align:right;
+	padding:2px 4px;
+}
+
+#formContact .row{
+	padding:2px 5px;
+}
+.fotoleistungen p{
+	margin-top:30px;
+	font-size:14px;
+	line-height: 20px;
+}
+.fotoleistungen .row{
+	padding: 20px 0;
+}
+/* columns of same height styles */
+
+.row-xs-height {
+    display: table;
+}
+.col-xs-height {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+.contentMiddle{
+	float:none;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:-4px;
+}
+input{
+	color: hsl(192.9,100%,29.2%);
+	margin: 2px 0;
+}
+input:focus{
+	padding: 4px 10px;
+	
+	box-shadow: inset 0 0 4px hsl(192.9,100%,29.2%);
+	border-radius: 10px;
+}

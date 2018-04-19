@@ -1,0 +1,17 @@
+.tumblr_posts{
+	list-style-type: none;
+}
+
+.tumblr_post{
+	margin-bottom: 60px;
+	padding:20px 40px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background: #EBEFF3;
+}
+
+.tumblr_title{
+	font-weight: bold;
+	padding:  0 0 30px 0;
+	font-size: 2em;
+}

@@ -1,0 +1,61 @@
+body,
+td,
+tr,
+table,
+p,
+span,
+div,
+input,
+textarea,
+select,
+option,
+ol,
+ul,
+li {
+	font-size: 20px;
+	line-height: 1.4em;
+}
+
+
+
+h1 {
+	font-size: 26px;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 26px;
+	line-height: 1.2em;
+}
+
+h2 sup {
+	font-size: 12px;
+	line-height: 1.0em;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+
+#header .divider,
+#header .a_menu:link,
+#header .a_menu:visited,
+#header .a_menu:hover,
+#subnav .divider,
+#subnav a.a_menu:link,
+#subnav a.a_menu:visited,
+#subnav a.a_menu:hover {
+	font-size: 24px;
+}
+
+#subnav {
+	padding: 15px 0px 15px 0px;
+}
+
+#footer * {
+	font-size: 20px;
+	line-height: 1.5em;
+	
+}

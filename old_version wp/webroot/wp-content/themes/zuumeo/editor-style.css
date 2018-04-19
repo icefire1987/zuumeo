@@ -1,0 +1,45 @@
+body {
+	background: #ffffff;
+}
+
+h1 {
+	max-width: 460px;
+}
+
+h2 {
+	max-width: 460px;
+}
+
+h3 {
+	max-width: 460px;
+}
+
+p {
+	max-width: 460px;
+}
+
+hr {
+	max-width: 460px;
+}
+
+pre,
+address {
+	display: block;
+	max-width: 460px;
+	padding: 100px;
+}
+
+ol, 
+ul {
+	max-width: 460px;
+}
+
+table p,
+table h1,
+table h2,
+table hr,
+table ol,
+table ul {
+	width: auto;
+	
+}

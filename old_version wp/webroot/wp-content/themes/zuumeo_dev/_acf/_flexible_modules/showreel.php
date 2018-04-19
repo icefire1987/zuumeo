@@ -1,0 +1,160 @@
+<?php
+
+$choices_pages = getAdminPosts("page");
+$choices_kunde = getAdminPosts("kunde");
+
+$choices_all_posts = $choices_pages + $choices_kunde;
+
+$m_showreel = $m_2_showreel = array(
+			'label'				=> $labels['showreel'],
+			'name'				=> 'm_showreel',
+			'key'				=> 'm_showreel',
+			'display'			=> 'row',
+			'sub_fields'		=> array(
+				'config_base'		=> $config_base_showreel,
+				'm_showreel_options' => array(
+					'label'				=> 'Einstellungen',
+					'name'				=> 'm_showreel_options',
+					'key'				=> 'm_showreel_options',
+					'type'				=> 'repeater',
+					'layout'			=> 'row',
+					'row_limit' 		=> 1,
+					'row_min' 			=> 1,
+					'sub_fields'		=> array(
+						'columns' 			=> array(
+							'label'				=> '# Spalten',
+							'name'				=> 'columns',
+							'key'				=> 'columns',
+							'type'				=> 'select',
+						    'choices'			=> $individole['choices_showreel_columns'],
+							'default_value'		=> 3,
+						),
+						'text' 				=> array(
+						    'label'				=> 'Textanzeige / Typ',
+						    'name'				=> 'text',
+						    'key'				=> 'text',
+						    'type'				=> 'select',
+						    'choices'			=> $individole['choices_imagelist_text'],
+						    'default_value'		=> 'below',
+						),
+						'text_title' 		=> array(
+						    'label'				=> 'Textanzeige / Title',
+						    'name'				=> 'text_title',
+						    'key'				=> 'text_title',
+						    'type'				=> 'true_false',
+						),
+						'text_subtitle' 	=> array(
+						    'label'				=> 'Textanzeige / Subtitle',
+						    'name'				=> 'text_subtitle',
+						    'key'				=> 'text_subtitle',
+						    'type'				=> 'true_false',
+						),
+						'text_text' 		=> array(
+						    'label'				=> 'Textanzeige / Text',
+						    'name'				=> 'text_text',
+						    'key'				=> 'text_text',
+						    'type'				=> 'true_false',
+						),
+						'overlay_bg_color' 	=> array(
+							'label'				=> 'Overlay / Hintergrundfarbe',
+							'name'				=> 'overlay_bg_color',
+							'key'				=> 'overlay_bg_color',
+							'type'				=> 'color_picker',
+						),
+						'overlay_bg_opacity' => array(
+							'label'				=> 'Overlay / Deckkraft (1-100)',
+							'name'				=> 'overlay_bg_opacity',
+							'key'				=> 'overlay_bg_opacity',
+							'type'				=> 'number',
+						),
+						'overlay_position' 	=> array(
+							'label'				=> 'Overlay / Position',
+							'name'				=> 'overlay_position',
+							'key'				=> 'overlay_position',
+							'type'				=> 'number',
+							'default_value'		=> 20,
+						),
+						'w' 				=> array(
+							'label'				=> 'Overlay / Breite Bild',
+							'instructions'		=> 'Seitenverh&auml;ltnis',
+							'name'				=> 'w',
+							'key'				=> 'w',
+							'type'				=> 'number',
+						),
+						'h' 				=> array(
+							'label'				=> 'Overlay / H&ouml;he Bild',
+							'instructions'		=> 'Seitenverh&auml;ltnis',
+							'name'				=> 'h',
+							'key'				=> 'h',
+							'type'				=> 'number',
+						),
+						'image' 			=> array(
+							'label'				=> 'Hintergrundbild',
+							'name'				=> 'image',
+							'key'				=> 'image',
+							'type'				=> 'image',
+							'preview_size'		=> 'medium',
+							'save_format'		=> 'id',
+						),
+					),
+				),
+				'm_showreel_content' => array(
+					'label'				=> 'Showreel<br>Inhalte',
+					'button_label'		=> '+ Showreel Inhalt hinzuf&uuml;gen',
+					'name'				=> 'm_showreel_content',
+					'key'				=> 'm_showreel_content',
+					'type'				=> 'repeater',
+					'layout'			=> 'row',
+					'row_limit' 		=> 0,
+					'row_min' 			=> 0,
+					'sub_fields'		=> array(
+						'logo' 				=> array(
+							'label'				=> 'Bild/Logo',
+							'name'				=> 'logo',
+							'key'				=> 'logo',
+							'type'				=> 'image',
+							'preview_size'		=> 'medium',
+							'save_format'		=> 'id',
+						),
+						'scale' 			=> array(
+							'label'				=> 'Bild Scale<br>in % (0=auto)',
+							'name'				=> 'scale',
+							'key'				=> 'scale',
+							'type'				=> 'number',
+							'default_value'		=> 0,
+						),
+						'page'				=> array(
+							'label'				=> 'Link',
+							'name'				=> 'page',
+							'key'				=> 'page',
+							'type'				=> 'select',
+							'choices'			=> $choices_all_posts,
+						),
+						'title'				=> array(
+							'label'				=> 'Title',
+							'name'				=> 'title',
+							'key'				=> 'title',
+							'type'				=> 'text',
+							'formatting'		=> 'none',
+							'default_value'		=> '',
+						),
+						'subtitle'				=> array(
+							'label'				=> 'Subtitle',
+							'name'				=> 'subtitle',
+							'key'				=> 'subtitle',
+							'type'				=> 'text',
+							'formatting'		=> 'none',
+							'default_value'		=> '',
+						),
+						'text'				=> array(
+							'label'				=> 'Text',
+							'name'				=> 'text',
+							'key'				=> 'text',
+							'type'				=> 'textarea',
+							'formatting'		=> 'none',
+							'default_value'		=> '',
+						),
+					),
+				),
+			),
+		);

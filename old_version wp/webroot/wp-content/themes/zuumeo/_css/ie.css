@@ -1,0 +1,7 @@
+#background-gradient-left {
+	filter: progid:DXImageTransform.Microsoft.Gradient(
+  		StartColorStr='#FF031221', EndColorStr='#00031221', GradientType=0
+	);
+	
+	border: 1px solid red;
+}
