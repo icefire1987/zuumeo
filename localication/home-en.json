@@ -36,6 +36,9 @@
   "kontakt":"Please do not hesitate to contact us – we will be glad to assist you!",
   "kontakt_anschrift":"Address",
   "kontakt_telefon":"Phone",
-  "kontakt_email":"E-mail"
-
+  "kontakt_email":"E-mail",
+  "button_angebot": "",
+  "foto_model_title": "",
+  "foto_model_list": "",
+  "foto_model_text": ""
 }
