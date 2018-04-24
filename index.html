@@ -10,7 +10,9 @@
     <meta http-equiv="Pragma" content="no-cache" />  
     <meta name="version" content="20150120"> 
 
-    <meta name="description" content="Ihr Foto-Dienstleister mit Inhouse-Textagentur und Sitz in Berlin. Alle Leistungen aus einer Hand – das ist unsere Stärke!">
+    <meta name="description" content="Ihr Foto-Dienstleister mit Inhouse-Textagentur und Sitz in Berlin. Alle Leistungen aus einer Hand – das ist unsere Stärke!" lang="de">
+	<meta name="description" content="Large-scale eCommerce content producer - with direct access to all major marketplaces. Based in Berlin and with core competencies in fashion."
+		  lang="en">
     <meta name="produktfotos" content="Wir sind Ihr Partner bei der Erstellung von Produktfotografien und -texten sowie der Anlage von Produktdaten für Ihren Onlineshop.">
     <meta name="author" content="Christopher Jurthe">
     <title>ZUUMEO GmbH</title>
@@ -33,14 +35,15 @@
 						<span class="icon-bar"></span> 
 						<span class="icon-bar"></span>
 					</button>
-					<div class="col-sm-1">
+					<div>
 						<a class="navbar-brand" href="#page-top"><img style="" src="inc/img/zuumeo.png"></a>
+						<ul class="flaglist">
+							<li><a hreflang="de" lang="de" href="?lang=de"><img src="css/flags/blank.gif" class="flag flag-de" alt="Deutsch"/></a></li>
+							<li><a hreflang="en" lang="en" href="?lang=en"><img src="css/flags/blank.gif" class="flag flag-gb" alt="English"/></a></li>
+						</ul>
 					</div>
 				</div>
-			<ul class="flaglist">
-				<li><a hreflang="de" lang="de" href="?lang=de"><img src="css/flags/blank.gif" class="flag flag-de" alt="Deutsch"/></a></li>
-				<li><a hreflang="en" lang="en" href="?lang=en"><img src="css/flags/blank.gif" class="flag flag-gb" alt="English"/></a></li>
-			</ul>
+
 				<!-- Navigation -->
 				<div class="collapse navbar-collapse" id="navbar-collapse">
 					<ul class="nav navbar-nav navbar-right" role="tablist" style="margin-right:0;">
@@ -180,7 +183,7 @@
 					</div>
 					<div class="col-xs-4 col-sm-2 leistungen_item" id="leistungen_foto_home">
 						<div class="asLink textCenter" data-target="#leistungen_foto_detail_home">
-							<span class="leistungen_icon"><img src="inc/img/l_foto_home1.png" alt="" class="img-responsive"></span>
+							<span class="leistungen_icon"><img src="inc/img/l_foto_looklet.png" alt="" class="img-responsive img-circle"></span>
 							<span class="leistungen_title" data-localize="title_foto_home">Looklet</span>
 							<p class="leistungen_text hidden-xs hidden-sm" data-localize="sub_foto_home">Dynamische Bilder auf effiziente Weise standardisieren.</p>
 						</div>
@@ -188,7 +191,7 @@
 				</div>
 				<div class="row hidden-sm padding_none" id="close_anc_leistungen_foto" style="display:none;">
 				<div class="col-xs-12 text-center" style="color: rgb(150,0,0);cursor: pointer">
-					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span style="padding:0 5px">Fixierung aufheben</span>
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span><span style="padding:0 5px" data-localize="fixierung">Fixierung aufheben</span>
 				</div>
 			</div>
 				<div class="row hidden-md hidden-lg padding_none">
@@ -340,12 +343,12 @@
 							<div class="col-sm-5">										
 								<h2 class="title" data-localize="foto_model_title">Modelfotografie</h2><span class='ui-icon ui-icon-bullet'></span>
 								<ul data-localize="foto_model_list">
-									<li>Authentische Produktpräsentation</li>
+									<li>Zielgerichtete Produktpräsentation</li>
 									<li>Markenprofil und Image schärfen</li>
 									<li>Emotionale Bildsprache</li>
 																	
 								</ul>	
-								<p data-localize="foto_model_text">
+								<p data-localize="foto_model_text_1">
 								Authentisch, emotional und individuell – mit Modelfotografien erwecken Sie Ihre Produkte zum Leben. Diese Art der Produktpräsentation birgt gleich mehrere Vorteile: Denn durch die brand-typische Auswahl von Style-Kombinationen, Model, Make-up und Posing können Sie Ihr Markenprofil schärfen und Ihre Zielgruppe direkt ansprechen. Am Model lassen sich markenreine Outfits stylen –  trendbewusst, saisonal und zeitgeistig. Wichtige Details wie die Passform oder der natürliche Fall kommen auf den Bildern wirkungsvoll zum Ausdruck. 
 								</p>	
 								<p>
@@ -381,7 +384,7 @@
 							</div>			
 						</div>
 					</div>	
-					<div class="row">
+					<div class="row hidden" >
 						<div class="col-sm-12 ">							
 							<div class="col-sm-3">
 								<img src="inc/img/fl_model_mop1.jpg" class="img-responsive" style="border-radius: 5px; box-shadow: 0 0 1px grey;">
@@ -392,7 +395,7 @@
 							<div class="col-sm-1"></div>
 							<div class="col-sm-5">
 								<a href="http://de.marc-o-polo.com" target="_blank"><img src="inc/img/ref/logo_mop.png" style="height:60px;margin-bottom:10px;"></a>
-								<p>
+								<p data-localize="foto_model_text_2">
 								Seit bald 50 Jahren ist Marc O’Polo ein bedeutender Namen in der Modebranche. 
 								Das in Deutschland ansässige Unternehmen mit schwedischen Wurzeln ist längst ein Global Player und wird in 30 Ländern vertreten. 
 								<br>Zu Recht: Denn die Marke Marc O’Polo steht synonym für hochwertige und zeitgemäße Premium Modern Casual Wear. Die hohen Qualitätsansprüche des Unternehmens spiegeln sich im Material und den Designs wieder.
@@ -406,17 +409,19 @@
 					<div class="row">	
 						<div class="col-sm-12 ">
 							<div class="col-sm-5">										
-								<h2 class="title">Hollowman / Büstenfotografie</h2><span class='ui-icon ui-icon-bullet'></span>
-								<ul>
+								<h2 class="title" data-localize="foto_hollowman_title">Hollowman / Büstenfotografie</h2><span class='ui-icon ui-icon-bullet'></span>
+								<ul data-localize="foto_hollowman_list">
 									<li>Ihr Produkt im Fokus</li>
 									<li>Einheitliches Shop-Bild</li>
 									<li>Klare Bildsprache</li>																		
-								</ul>	
-								<p>
+								</ul>
+								<p data-localize="foto_hollowman_text_1">
 									Machen Sie Ihr Produkt zum Hauptdarsteller. Wie? Durch Produktfotografie an der Büste oder an der Puppe. Diese Art der Darstellung nimmt exklusiv das Produkt in den Fokus und lenkt den Blick auf Details, Struktur und Passform des Artikels. Eine besondere Art der Büstenfotografie ist der Hollowman: Hier wird die Büste wegretuschiert, wodurch Innendetails wie beispielsweise das Labeletikett sichtbar werden. Auf Ihrer Produktübersichtsseite vermitteln Hollowman- sowie Büsten-Fotografien ein cleanes, aufgeräumtes Shop-Bild. 
 								</p>	
 								<p>
-									<button class="inputSubmit" onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot anfordern</button>
+									<button class="inputSubmit" data-localize="button_angebot"
+											onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot
+										anfordern</button>
 								</p>
 							</div>
 							<div class="col-sm-1"></div>
@@ -428,7 +433,7 @@
 							</div>			
 						</div>
 					</div>	
-					<div class="row">
+					<div class="row" >
 						<div class="col-sm-12 ">							
 							<div class="col-sm-6" style="padding-left:10px;">
 								<img src="inc/img/fl_hm_z.jpg" class="img-responsive">
@@ -436,7 +441,7 @@
 							<div class="col-sm-1"></div>
 							<div class="col-sm-5">
 								<a href="http://www.zalando.de" target="_blank"><img src="inc/img/ref/logo_zalando.png" style="height:50px;margin-top:10px;"></a>
-								<p>
+								<p data-localize="foto_hollowman_text_2">
 								Innerhalb von wenigen Jahren hat sich Zalando zu einem Online-Anbieter entwickelt, der heute Millionen von Kunden in ganz Europa einen Zugang zu Mode bietet. 
 								Im Sortiment finden sich bekannte Trendmarken, die Zalando-Eigenmarken und die Mode vieler lokaler Designer. 
 								Verschickt wird aus den eigens konzipierten Logistikzentren und Zalando Service kümmert sich kostenfrei und schnell um alle Kundenwünsche.
@@ -450,17 +455,19 @@
 					<div class="row">	
 						<div class="col-sm-12 ">
 							<div class="col-sm-5">										
-								<h2 class="title">Laydown</h2><span class='ui-icon ui-icon-bullet'></span>
-								<ul>
+								<h2 class="title" data-localize="foto_laydown_title">Laydown</h2><span class='ui-icon ui-icon-bullet'></span>
+								<ul data-localize="foto_laydown_list">
 									<li>Ihr Produkt im Fokus</li>
 									<li>Top-down-Ansicht</li>
 									<li>Viele Verwendungszwecke</li>
 								</ul>	
-								<p>
+								<p data-localize="foto_laydown_text_1">
 									Laydowns sind am Legetisch in Szene gesetzte Arrangements Ihrer Artikel. Das Ergebnis dieser Darstellung weist – ähnlich wie bei der Büstenfotografie – eine klare Bildsprache auf. Ihre Artikel können je nach Bedarf gelegt, gefaltet oder gestapelt werden. Die Freisteller der Produktfotografien finden unterschiedlichste Verwendung, ob in kreativen Kompositionen oder als cleanes Produktbild. Die Laydown-Fotografie ist immer gefragt, da die Freisteller vielfältig eingesetzt werden können und sich somit nicht nur für Ihren Onlineshop eignen, sondern auch für Online-Kampagnen oder Printerzeugnisse. 
 								</p>	
 								<p>
-									<button class="inputSubmit" onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot anfordern</button>
+									<button class="inputSubmit" data-localize="button_angebot"
+											onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot
+										anfordern</button>
 								</p>
 							</div>
 							<div class="col-sm-1"></div>
@@ -473,17 +480,14 @@
 						</div>
 					</div>	
 					<div class="row">
-						<div class="col-sm-12 ">							
-							<div class="col-sm-3">						
-						     	<img src="inc/img/slider/ay2.jpg" class="img-responsive" >
-							</div>
-							<div class="col-sm-3">						
-						     	<img src="inc/img/slider/ay1.jpg" class="img-responsive" >
+						<div class="col-sm-12 ">
+							<div class="col-sm-6">
+						     	<img src="inc/img/slider/ay1.jpg" class="img-responsive">
 							</div>				
 							<div class="col-sm-1"></div>
 							<div class="col-sm-5">
-								<a href="http://www.aboutyou.de" target="_blank"><img src="inc/img/ref/logo_aboutyou.png" style="height:80px;margin-bottom:10px;"></a>
-								<p>
+								<a href="http://www.aboutyou.de" target="_blank"><img src="inc/img/ref/logo_ay.png" style="height:80px;margin-bottom:10px;"></a>
+								<p data-localize="foto_laydown_text_2">
 									About you ist die stylebewusste Tochter von Collins – der Projektentwicklungsgesellschaft der Otto Group. 
 									Hier wird mit Nachdruck an dem bestmöglichen Shopping-Erlebnis gearbeitet, denn das Du – der Kunde – steht im Mittelpunkt! 
 									Deswegen trifft man bei About you nicht nur auf alle Top-Marken, die Newcomer der Modeszene oder die angesagtesten Teile der kommenden Saison, 
@@ -498,17 +502,19 @@
 					<div class="row">	
 						<div class="col-sm-12 ">
 							<div class="col-sm-5">										
-								<h2 class="title">Shoes</h2><span class='ui-icon ui-icon-bullet'></span>
-								<ul>
+								<h2 class="title" data-localize="foto_shoes_title">Shoes</h2><span class='ui-icon ui-icon-bullet'></span>
+								<ul data-localize="foto_shoes_list">
 									<li>Sieben Jahre Expertise</li>
 									<li>Hochauflösende Detailbilder</li>
 									<li>Authentische Abbildung</li>
 								</ul>	
-								<p>
+								<p data-localize="foto_shoes_text_1">
 									Die Produktdarstellung von Schuhen stellt spezielle Herausforderungen an den Fotografen. Denn unterschiedliche Materialien wie Lack, Hochglanzleder oder Rauleder erfordern ein hohes Maß an Expertise. Durch unsere langjährige Erfahrung in der Schuh-Fotografie wissen wir genau, worauf es ankommt: Unsere Fotos vermitteln ein Höchstmaß an visuellen Informationen – ob Laufschuh, Kinder-Ballerina oder High Heel – es gibt kein Modell, das wir nicht adäquat für Sie in Szene setzen können. 
 								</p>	
 								<p>
-									<button class="inputSubmit" onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot anfordern</button>
+									<button class="inputSubmit" data-localize="button_angebot"
+											onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot
+										anfordern</button>
 								</p>
 							</div>
 							<div class="col-sm-1"></div>
@@ -544,7 +550,7 @@
 							<div class="col-sm-1"></div>
 							<div class="col-sm-5">
 								<a href="http://www.scarosso.de" target="_blank"><img src="inc/img/ref/logo_scarosso.png" style="height:60px;margin-top:10px;"></a>
-								<p>
+								<p data-localize="foto_shoes_text_2">
 								Scarosso produziert seine Schuhe ausschließlich aus italienischen Echtledermaterialien in italienischen Produktionsstätten. 
 								Durch die selbstständige Kontrolle der Herstellungsprozesse und Vertriebskanäle ist es der Schuhmarke möglich, 
 								einem großen Publikum Premium-Qualität zu einem unvergleichlichen Preis anzubieten. 
@@ -561,17 +567,19 @@
 					<div class="row">	
 						<div class="col-sm-12 ">
 							<div class="col-sm-5">										
-								<h2 class="title">Accessoires</h2><span class='ui-icon ui-icon-bullet'></span>
-								<ul>
+								<h2 class="title" data-localize="foto_acc_title">Accessoires</h2><span class='ui-icon ui-icon-bullet'></span>
+								<ul data-localize="foto_acc_list">
 									<li>Authentische Fotografien</li>
 									<li>Trendbewusste Arrangements</li>
 									<li>Erprobte Technik</li>
 								</ul>	
-								<p>
+								<p data-localize="foto_acc_text_1">
 									Taschen, Gürtel, Schals und Schlüsselanhänger - die Welt der Accessoires ist vielfältig und eine Herausforderung für jeden Fotografen. Prozess- und technikerfahren bilden wir Ihre Produkte ab und sorgen dafür, dass die Feinheiten und Besonderheiten authentisch dargestellt werden. Dabei legen wir natürlich nicht nur Wert auf die richtige Technik, sondern auch auf die Art und Weise wie Ihr Produkt vor der Kamera in Szene gesetzt wird. Unsere Stylisten drapieren, legen und arrangieren Ihre Produkte markengerecht und trendbewusst. 
 								</p>	
 								<p>
-									<button class="inputSubmit" onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot anfordern</button>
+									<button class="inputSubmit" data-localize="button_angebot"
+											onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot
+										anfordern</button>
 								</p>
 							</div>
 							<div class="col-sm-1"></div>
@@ -620,7 +628,7 @@
 							<div class="col-sm-1"></div>
 							<div class="col-sm-5">
 								<a href="http://www.misterspex.de" target="_blank"><img src="inc/img/ref/logo_mrspex.jpg" style="height:60px;margin-top:10px;"></a>
-								<p>
+								<p data-localize="foto_acc_text_2">
 								So kauft man Brillen heute – lautet der Slogan des führenden Online-Optikers in Europa. Mister Spex ist ein ausgezeichneter Onlinehändler für Kontaktlinsen und Markenbrillen sowie Sonnenbrillen. Zusätzliche kostenlose Services wie Sehtests und Brillenanpassungen, aber auch die attraktive Preispolitik überzeugten bereits mehr als 1,5 Millionen Kunden. Die moderne Plattform in Kombination mit der großen Auswahl an Produkten zeichnet den preisgekrönten Optiker aus. </p>
 							</div>
 						</div>
@@ -629,17 +637,20 @@
 					<div class="row">	
 						<div class="col-sm-12 ">
 							<div class="col-sm-5">										
-								<h2 class="title">Jewellery</h2><span class='ui-icon ui-icon-bullet'></span>
-								<ul>
+								<h2 class="title" data-localize="foto_jewl_title">Jewellery</h2><span class='ui-icon ui-icon-bullet'></span>
+								<ul data-localize="foto_jewl_list">
 									<li>Präzise Handarbeit</li>
 									<li>Perfekte Ausleuchtung</li>
 									<li>Detailgetreue Ergebnisse</li>
 								</ul>	
-								<p>
+								<p data-localize="foto_jewl_text_1">
 									Schmuck-Fotografie ist Handwerk erfordert ein besonders hohes Maß an Präzision. Die Schwierigkeiten liegen in der korrekten Ausleuchtung, der Auflösung und der detailgetreuen Abbildung Ihres Produkts. Dank umfassender Erfahrung mit dieser Produktkategorie haben wir das Fingerspitzengefühl erlangt, um Ihre Artikel glänzend in Szene zu setzen. Um optimale Bilder zu erzielen, arbeiten wir mit vielfältigen Beleuchtungstechniken, Reflexionen und Spiegelungen. 
 								</p>	
 								<p>
-									<button class="inputSubmit" onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot anfordern</button>
+									<button class="inputSubmit" data-localize="button_angebot"
+											onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked',
+									true);">Angebot
+										anfordern</button>
 								</p>
 							</div>
 							<div class="col-sm-1"></div>
@@ -659,7 +670,7 @@
 							
 							<div class="col-sm-5">
 								<a href="http://www.christ.de" target="_blank"><img src="inc/img/ref/logo_christ.png" style="height:50px;margin-top:10px;"></a>
-								<p>
+								<p data-localize="foto_jewl_text_2">
 								Seit 1863 steht der Name CHRIST für die Faszination von Schmuck und Uhren. 
 								Das Unternehmen kann auf eine glänzende Tradition zurückblicken, deren Wurzeln bis ins Jahr 1863 reichen. 
 								So steht der Name CHRIST nicht nur für erstklassige Qualität und exzellenten Service, sondern ebenso für besondere Schmuckideen. 
@@ -677,27 +688,26 @@
 					<div class="row">	
 						<div class="col-sm-12 ">
 							<div class="col-sm-5">										
-								<h2 class="title">Home</h2><span class='ui-icon ui-icon-bullet'></span>
-								<ul>
-									<li>Markengerechte Settings</li>
-									<li>Kreative Konzeption</li>
-									<li>Im Homestudio und am Legetisch</li>
-								</ul>	
-								<p>
-									In unserem Home-Fotostudio schaffen wir für Sie maßgeschneiderte Wohnwelten und bieten kreative Lösungen an. In Zusammenarbeit mit unserem Art Director werden Ihre Produkte trendaffin, zielgruppengerecht und stimmungsvoll inszeniert. Neben Homestudio-Welten bieten wir auch Legetisch-Arrangements  – so lassen sich Sets oder Kombinationen hervorragend abbilden. Immer im Fokus: Die präzise Darstellung der Eigenschaften und Funktionen Ihres Produkts. Unsere hochauflösenden Detailbilder, Bilderserien und Moodfotos liefern für Ihre Kunden wichtige Informationen. 
+								<h2 class="title" data-localize="foto_looklet_title">Looklet</h2><span class='ui-icon ui-icon-bullet'></span>
+
+								<p data-localize="foto_looklet_text_1">
+									An unserem Standort in Berlin setzen wir als exklusiver Partner an mehreren Slots die fortschrittliche Looklet-Studiotechnologie unseres schwedischen Partners aus Stockholm ein. Mithilfe dieser cleveren Fototechnik lassen sich erhebliche Standardisierungen auf dem Gebiet der dynamischen Bilder speziell im Bereich Fashion erzielen, die zudem sehr leicht skalierbar sind.
 								</p>	
 								<p>
-									<button class="inputSubmit" onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot anfordern</button>
+									<button class="inputSubmit" data-localize="button_angebot"
+											onclick="$('body, html').animate({scrollTop: $('#anc_contact').offset().top});$('#3').prop('checked', true);">Angebot
+										anfordern</button>
 								</p>
 							</div>
 							<div class="col-sm-1"></div>
-							<div class="col-sm-6" style="padding-left:10px;">
-								<img src="inc/img/slider/mil1.jpg" class="img-responsive borderRound" >
-							</div>	
+							<div class="col-sm-6">
+								<img src="inc/img/slider/looklet.jpg" class="img-responsive" >
+							</div>
+
 						</div>
 					</div>	
-					<div class="row">
-						<div class="col-sm-12 ">							
+					<div class="row hidden">
+						<div class= "col-sm-12 ">
 							<div class="col-sm-6" style="padding-left:0px;">
 								<div id="car_f_h" class="carousel slide" data-ride="carousel">
 									<ol class="carousel-indicators">
@@ -844,7 +854,7 @@
 								</p>
 								<p style="display: table-row;">
 									<b style="display: table-cell;" data-localize="kontakt_telefon">Telefon: </b>
-									<a style="display: table-cell; " href="tel:+493089049490">030/89049490</a>
+									<a style="display: table-cell; " href="tel:+493089049490">+49 (0)30/89049490</a>
 								</p>
 								<p style="display: table-row">
 									<b style="display: table-cell" data-localize="kontakt_email">Email: </b>
@@ -863,25 +873,25 @@
 						<div class="col-sm-8">
 							<form class="form-horizontal" role="form" id="formContact">
 								<div class="form-group">
-									<label class="control-label col-sm-4" for="name">Ihr Name *</label>
+									<label class="control-label col-sm-4" for="name" data-localize="kontakt_form_name">Ihr Name *</label>
 									<div class="col-sm-8">
 										<input id="name" type="text" name="name" class="textinput" required>
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="control-label col-sm-4" for="email">Ihre E-Mail-Adresse *</label>
+									<label class="control-label col-sm-4" for="email" data-localize="kontakt_form_mail">Ihre E-Mail-Adresse *</label>
 									<div class="col-sm-8">
 										<input id="email" type="email" name="email" class="textinput" required>
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="control-label col-sm-4" for="firma">Ihre Firma</label>
+									<label class="control-label col-sm-4" for="firma" data-localize="kontakt_form_firma">Ihre Firma</label>
 									<div class="col-sm-8">
 										<input id="firma" type="text" name="firma" class="textinput" required>
 									</div>
 								</div>
 								<div class="form-group">
-									<label class="control-label col-sm-4" for="telefon">Ihre Telefonnummer</label>
+									<label class="control-label col-sm-4" for="telefon" data-localize="kontakt_form_telefon">Ihre Telefonnummer</label>
 									<div class="col-sm-8">
 										<input id="telefon" type="tel" name="telefon" class="textinput" required>
 									</div>
@@ -890,21 +900,21 @@
 								<div class="form-group">
 									<div class="col-sm-6">
 										<input type="radio" id="3" value="Angebotserstellung" name="grund[]">
-										<label for="3"><span></span>Angebotserstellung</label>	
+										<label for="3"><span class="kontakt_checkbox"></span><span data-localize="kontakt_form_option_angebot">Angebotserstellung</span></label>
 									</div><div class="col-sm-6">
 										<input type="radio" id="4" value="Personalanfrage" name="grund[]">
-										<label for="4"><span></span>Personalanfrage</label>											
+									<label for="4"><span class="kontakt_checkbox"></span><span data-localize="kontakt_form_option_personal">Personalanfrage</span></label>
 									</div><div class="col-sm-6">
 										<input type="radio" id="2" value="Presseanfrage" name="grund[]">
-										<label for="2"><span></span>Presseanfrage</label>
+									<label for="2"><span class="kontakt_checkbox"></span><span data-localize="kontakt_form_option_presse">Presseanfrage</span></label>
 									</div><div class="col-sm-6">										
 										<input type="radio" id="1" value="Sonstiges" name="grund[]">
-										<label for="1"><span></span>Sonstiges</label>
+									<label for="1"><span class="kontakt_checkbox"></span><span data-localize="kontakt_form_option_sonstiges">Sonstiges</span></label>
 									</div>								
 								</div>
 								
 								<div class="form-group">								
-										<label class="control-label col-sm-12" for="anmerkung">Ihre Nachricht</label>
+										<label class="control-label col-sm-12" for="anmerkung" data-localize="kontakt_form_nachricht">Ihre Nachricht</label>
 										<div class="col-sm-12">
 											<textarea id="anmerkung" rows="4" style="" name="anmerkung"></textarea>
 										</div>
@@ -914,7 +924,7 @@
 								</div>
 								<div class="form-group" style="background: none;">	
 									<div class="col-sm-12" style="text-align:center;">
-										<input id="submit" type="submit" name="absenden" value="Absenden" class="inputSubmit">
+										<input id="submit" type="submit" name="absenden" value="Absenden" class="inputSubmit" data-localize="button_absenden">
 									</div>
 								</div>							
 							</form>
@@ -938,7 +948,7 @@
 			<div class="footerblock col-xs-12 col-sm-6">
 					<a href="stellenangebote.html" target="zuumeoSub">Jobs</a>
 					<span>|</span>
-					<a href="impressum.html" target="zuumeoSub">Impressum</a>
+					<a href="impressum.html" data-localize="impressum" target="zuumeoSub">Impressum</a>
 			</div>	
 
 			<div class="footerblock col-xs-12 col-sm-3">
@@ -963,9 +973,13 @@
         return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     };
 	$(document).ready(function(){
+	    console.log(location.search)
+		console.log(getUrlParameter('lang'))
         if(getUrlParameter('lang') && getUrlParameter('lang') == "en"){
+	        console.log("local")
             $("[data-localize]").localize("home", { language: "en", pathPrefix: "localication" });
         }
+        // Click - Binding Sprache
 			$("#anc_leistungen_foto").affix({offset: {				
 					top: $("#anc_leistungen").offset().top + $("#anc_leistungen").outerHeight(true) -25
 			}});	   

@@ -467,7 +467,7 @@ ul {
 input[type="radio"] {
     display: none;
 }
-input[type="radio"] + label span {
+input[type="radio"] + label .kontakt_checkbox {
 	
 	position: relative;
     display:inline-block;
@@ -480,7 +480,7 @@ input[type="radio"] + label span {
     border: white;
     border-radius: 5px;
 }
-input[type="radio"]:checked + label span:after {
+input[type="radio"]:checked + label .kontakt_checkbox:after {
 	display:block;
 	position: absolute;
     color: hsl(190,55%,45%);
@@ -551,6 +551,7 @@ input:focus{
 	opacity: 0;
 }
 .flaglist {
+	display: inline-block;
 	list-style-type: none;
 	list-style-image: none;
 	margin: 0;
